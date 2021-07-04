@@ -13,10 +13,10 @@ const About = () => {
         height: '90vh'
       }}
     >
-      <Container>
         <Row>
           <Col>
-              <img src={ProfilePic} id='profile-pic' alt='profile-pic'></img>
+              {/* <img src={ProfilePic} id='profile-pic' alt='profile-pic'></img> */}
+              <h1>Test</h1>
           </Col>
           <Col>
             <h1>About Me</h1>
@@ -25,7 +25,6 @@ const About = () => {
             </p>
           </Col>
         </Row>
-      </Container>
     </div>
   );
 };
