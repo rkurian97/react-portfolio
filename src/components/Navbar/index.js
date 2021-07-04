@@ -6,23 +6,25 @@ import {
     NavMenu
   } from './NavbarElements';
 
+  import {FaGgCircle} from 'react-icons/fa';
+
 const Navbar = () => {
     return (
         <div>
             <Nav>
                 <NavLink to="/">
-                        Logo
+                        <FaGgCircle size={56} style={{ fill: '#15cdfc' }}/>
                 </NavLink>
                 <Bars/>
                 <NavMenu>
                     <NavLink to="/about" >
                         About Me
                     </NavLink>
-                    <NavLink to="/contact">
-                        Contact
-                    </NavLink>
                     <NavLink to="/project">
                         My Projects
+                    </NavLink>
+                    <NavLink to="/contact">
+                        Contact
                     </NavLink>
                 </NavMenu>
             </Nav>
