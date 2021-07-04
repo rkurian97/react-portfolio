@@ -1,4 +1,3 @@
-  
 import React from 'react';
 import ProfilePic from '../assets/Portfolio_Pic.jpg'
 import { Container, Row, Col } from 'react-bootstrap';
@@ -10,13 +9,14 @@ const About = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '90vh'
+        height: '90vh',
+        background: '#101010'
       }}
     >
+      <Container>
         <Row>
           <Col>
-              {/* <img src={ProfilePic} id='profile-pic' alt='profile-pic'></img> */}
-              <h1>Test</h1>
+              <img src={ProfilePic} id='profile-pic' alt='profile-pic'></img>
           </Col>
           <Col>
             <h1>About Me</h1>
@@ -25,6 +25,7 @@ const About = () => {
             </p>
           </Col>
         </Row>
+        </Container>
     </div>
   );
 };

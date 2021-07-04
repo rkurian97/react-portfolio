@@ -6,7 +6,29 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: white;
 }
 #profile-pic{
-  width: 20%;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.form-input{
+  background-color: #191919;
+}
+
+/*Project*/
+#projects img{
+  width: 30%;
+  border-radius: 15px;
+  
+}
+
+#projects img:hover{
+  width: 35%;
+}
+
+#projects a{
+  display: flex;
+  justify-content: center;
 }

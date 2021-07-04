@@ -4,6 +4,7 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Project from './pages/project';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
