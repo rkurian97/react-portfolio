@@ -49,14 +49,14 @@ const Contact = () => {
     >
     <section>
       <Container>
-      <h1 data-testid="h1tag">Contact me</h1>
+      <h1 data-testid="h1tag">Contact <span class='theme'>me</span></h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <Row>
           <Col> <label htmlFor="name">Name:</label> </Col>
           <Col> <input class='form-input' type="text" name="name" defaultValue={name} onBlur={handleChange}/> </Col>
         </Row>
         <Row>
-          <Col> <label htmlFor="email">Email address:</label> </Col>
+          <Col> <label htmlFor="email"> <span class='theme'>Email address:</span></label> </Col>
           <Col><input class='form-input' type="email" name="email" defaultValue={email} onBlur={handleChange} /> </Col>
         </Row>
         <Row>
@@ -69,7 +69,7 @@ const Contact = () => {
           </div>
         )}
         <Row>
-          <Button variant="danger" data-testid="button" type="submit">Submit</Button>
+          <Button variant='info' style={{ background: '#15cdfc' }} data-testid="button" type="submit">Submit</Button>
         </Row>
       </form>
       </Container>

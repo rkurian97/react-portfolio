@@ -32,3 +32,7 @@
   display: flex;
   justify-content: center;
 }
+
+.theme {
+  color: #15cdfc
+}

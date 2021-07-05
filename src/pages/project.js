@@ -34,7 +34,7 @@ const Project = () => {
 
         <div class="project">
             <h5>Pokemon Team Builder (Node/Express/Sequelize/Handlebars)</h5>
-            <a href="https://bc-project-2.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://bc-project-2.herokuapp.com" target="_blank" rel="noopener noreferrer">
                 <img src={Pokemon} alt='Pokemon Team Builder App'/>
             </a>
         </div>

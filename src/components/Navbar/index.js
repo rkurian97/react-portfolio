@@ -1,21 +1,15 @@
-import React from 'react'
-import {
-    Nav,
-    NavLink,
-    Bars,
-    NavMenu
-  } from './NavbarElements';
+import {Nav, NavLink, Bars, NavMenu} from './NavbarElements';
+import {FaGgCircle} from 'react-icons/fa';
 
-  import {FaGgCircle} from 'react-icons/fa';
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <div>
             <Nav>
                 <NavLink to="/">
                         <FaGgCircle size={56} style={{ fill: '#15cdfc' }}/>
                 </NavLink>
-                <Bars/>
+                <Bars onClick={toggle}/>
                 <NavMenu>
                     <NavLink to="/about" >
                         About Me
