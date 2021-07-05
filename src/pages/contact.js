@@ -38,42 +38,34 @@ const Contact = () => {
   };
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '90vh',
-        background: '#101010'
-      }}
-    >
-    <section>
-      <Container>
-      <h1 data-testid="h1tag">Contact <span class='theme'>me</span></h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <Row>
-          <Col> <label htmlFor="name">Name:</label> </Col>
-          <Col> <input class='form-input' type="text" name="name" defaultValue={name} onBlur={handleChange}/> </Col>
-        </Row>
-        <Row>
-          <Col> <label htmlFor="email"> <span class='theme'>Email address:</span></label> </Col>
-          <Col><input class='form-input' type="email" name="email" defaultValue={email} onBlur={handleChange} /> </Col>
-        </Row>
-        <Row>
-          <Col> <label htmlFor="message">Message:</label> </Col>
-          <Col> <textarea class='form-input' name="message" rows="5" defaultValue={message} onBlur={handleChange} /> </Col>
-        </Row>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-        <Row>
-          <Button variant='info' style={{ background: '#15cdfc' }} data-testid="button" type="submit">Submit</Button>
-        </Row>
-      </form>
-      </Container>
-    </section>
+    <div className='contact'>
+      <section>
+        <Container>
+        <h1 data-testid="h1tag">Contact <span class='theme'>me</span></h1>
+        <form id="contact-form" onSubmit={handleSubmit}>
+          <Row>
+            <Col> <label htmlFor="name">Name:</label> </Col>
+            <Col> <input class='form-input' type="text" name="name" defaultValue={name} onBlur={handleChange}/> </Col>
+          </Row>
+          <Row>
+            <Col> <label htmlFor="email"> <span class='theme'>Email address:</span></label> </Col>
+            <Col><input class='form-input' type="email" name="email" defaultValue={email} onBlur={handleChange} /> </Col>
+          </Row>
+          <Row>
+            <Col> <label htmlFor="message">Message:</label> </Col>
+            <Col> <textarea class='form-input' name="message" rows="5" defaultValue={message} onBlur={handleChange} /> </Col>
+          </Row>
+          {errorMessage && (
+            <div>
+              <p className="error-text">{errorMessage}</p>
+            </div>
+          )}
+          <Row>
+            <Button variant='info' style={{ background: '#15cdfc' }} data-testid="button" type="submit">Submit</Button>
+          </Row>
+        </form>
+        </Container>
+      </section>
     </div>
   );
 };

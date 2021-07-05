@@ -36,3 +36,41 @@
 .theme {
   color: #15cdfc
 }
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+    background: #101010;
+}
+
+@media screen and (max-width: 1000px) {
+  .about{
+    height: 200vh;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .about{
+    height: 300vh;
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: #101010;
+
+}
+
+.projectComp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130vh;
+  background: #101010;
+
+}

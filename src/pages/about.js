@@ -6,15 +6,7 @@ import 'react-tabs/style/react-tabs.css';
 
 const About = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '120vh',
-        background: '#101010'
-      }}
-    >
+    <div className='about'>
       <Container>
         <Row>
           <Col>

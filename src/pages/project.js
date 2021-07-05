@@ -5,16 +5,7 @@ import Pokemon from "../assets/team-page.jpg"
 
 const Project = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '130vh',
-        background: '#101010'
-      }}
-    >
-
+    <div className='projectComp'>
       <section id="projects">
         <h2>Projects</h2>
 
