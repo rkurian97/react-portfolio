@@ -9,10 +9,10 @@ const About = () => {
     <div className='about'>
       <Container>
         <Row>
-          <Col>
+          <Col xs="12" md="6">
             <img src={ProfilePic} id='profile-pic' alt='profile-pic'></img>
           </Col>
-          <Col>
+          <Col xs="12" md="6">
             <h1> <span class='theme'>About</span> Me</h1>
             <p>
              Hi, my name is Rohith Kurian, and welcome to my world. I finally knew that IT was the field for me after taking some <span class='theme'>database</span> classes that involved a lot of data modeling and realizing that I love data. Weird, I know. From how its stored, to how to retrieve it from users, to analyzing it and displaying it in nice <span class='theme'>visualizations</span>. I find all of it interesting. Although, I found my interest in a class that was meant to be an intro to database administration, I felt that field would not <span class='theme'>scratch</span> my programming itch, so here I am pursuing an occupation in full-stack development. Right about now, I am probably scouring through Google to solve a coding problem and chase that euphoria from seeing "Compiled <span class='theme'>Successfully</span>!" 

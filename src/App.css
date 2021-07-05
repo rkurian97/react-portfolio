@@ -17,43 +17,28 @@
   background-color: #191919;
 }
 
-/*Project*/
-#projects img{
-  width: 30%;
-  border-radius: 15px;
-  
-}
-
-#projects img:hover{
-  width: 35%;
-}
-
-#projects a{
-  display: flex;
-  justify-content: center;
-}
 
 .theme {
   color: #15cdfc
 }
 
 .about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 140vh;
-    background: #101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140vh;
+  background: #101010;
 }
 
 @media screen and (max-width: 1000px) {
   .about{
-    height: 200vh;
+    height: 180vh;
   }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 400px) {
   .about{
-    height: 300vh;
+    height: 220vh;
   }
 }
 
@@ -70,7 +55,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 130vh;
+  height: 120vh;
   background: #101010;
 
 }
+
+/* Project */
+.projectComp img{
+  width: 70%;
+  border-radius: 15px;
+  
+}
+
+.projectComp img:hover{
+  width: 75%;
+}
+
+.projectsContainer{
+  width: 50%;
+}
+
+
