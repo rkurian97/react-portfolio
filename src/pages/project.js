@@ -2,6 +2,7 @@ import React from 'react';
 import RunBuddy from "../assets/run-buddy.png"
 import OnTheScene from "../assets/project1.png"
 import Pokemon from "../assets/team-page.jpg"
+import Lucid from "../assets/lucid-game.png"
 
 const Project = () => {
   return (
@@ -23,7 +24,12 @@ const Project = () => {
                 <a href="https://bc-project-2.herokuapp.com" target="_blank" rel="noopener noreferrer">
                     <img src={Pokemon} alt='Pokemon Team Builder App'/>
                 </a>
-            
+
+                <h5>Lucid Game Review (Node/Express/React/MongoDb/JWT)</h5>
+                <a href="https://bc-project-2.herokuapp.com" target="_blank" rel="noopener noreferrer">
+                    <img src={Lucid} alt='Lucid Game Review App'/>
+                </a>
+
         </section>
         
     </div>
