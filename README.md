@@ -1,4 +1,4 @@
-# employee-tracker
+# React Portfolio
 
 ## Purpose
 Rohith Kurian's React Web Portfolio.
@@ -7,6 +7,9 @@ Rohith Kurian's React Web Portfolio.
 * Javascript
 * Node.js
 * React
+
+## Live link
+https://rohith-react-portfolio.herokuapp.com/
 
 ## Contribution
 Made by Rohith Kurian. 
