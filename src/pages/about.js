@@ -11,7 +11,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2">
           {/* Profile Pic  */}
           <div >
-            <img className="ml-auto mr-auto mb-2" src={ProfilePic} id='profile-pic' alt='profile-pic'></img>
+            <img className="ml-auto mr-auto mb-2 w-10/12 rounded-lg" src={ProfilePic} id='profile-pic' alt='profile-pic'></img>
           </div>
 
           {/* About Info  */}

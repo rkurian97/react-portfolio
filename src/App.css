@@ -1,16 +1,6 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
-
 * {
   font-family: 'Sora', sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   color: white;
-}
-#profile-pic{
-  width: 60%;
-  border-radius: 10px;
 }
 
 .form-input{
@@ -46,9 +36,6 @@
   
 }
 
-.projectComp img:hover{
-  width: 75%;
-}
 
 .projectsContainer{
   width: 50%;

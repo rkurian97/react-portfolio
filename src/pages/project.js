@@ -1,39 +1,51 @@
 import React from 'react';
-import RunBuddy from "../assets/run-buddy.png"
+// import RunBuddy from "../assets/run-buddy.png"
 import OnTheScene from "../assets/project1.png"
 import Pokemon from "../assets/team-page.jpg"
 import Lucid from "../assets/lucid-game.png"
 
+import ProjectDiv from '../components/ProjectDiv';
+
 const Project = () => {
-  return (
-    <div className='projectComp flex-grow bg-gray-900'>
-        <section className='projectsContainer'>
-            
-                <h5>Run Buddy (Html/CSS)</h5>
-                <a href="https://rkurian97.github.io/run-buddy/" target="_blank" rel="noopener noreferrer">
-                    <img src={RunBuddy} alt='Run Buddy Project' /> 
-                </a>
-            
-                <h5>On the Scene App (Javascript/Html/CSS)</h5>
-                <a href="https://rkurian97.github.io/bc-project-1/" target="_blank" rel="noopener noreferrer">
-                    <img src={OnTheScene} alt='On The Scene App'/>
-                </a>
-            
-            
-                <h5>Pokemon Team Builder (Node/Express/Sequelize/Handlebars)</h5>
-                <a href="https://bc-project-2.herokuapp.com" target="_blank" rel="noopener noreferrer">
-                    <img src={Pokemon} alt='Pokemon Team Builder App'/>
-                </a>
+    const projects= [
+        {
+            title: 'Lucid Game Review',
+            image: Lucid,
+            github: 'https://github.com/rkurian97/bc-project-3',
+            live: 'https://bc-project-2.herokuapp.com',
+            description: 'Lucid Game Review is a Video Game review blog with social networking features. Features that are soon to come are the ability to add comments.',
+            tags: ['#Javascript', '#Express.js', '#MongoDB', '#Tailwind.css', '#GraphQL']
+        },
+        {
+            title: 'On the Scene',
+            image: OnTheScene,
+            github: 'https://github.com/rkurian97/bc-project-1',
+            live: 'https://bc-project-2.herokuapp.com',
+            description: "On The Scene is a Movie Database that provides streaming availability details for Movies and Television Shows.",
+            tags: ['#Javascript', '#HTML5', '#CSS3', '#Bulma', '#Local Storage']
+        },
+        {
+            title: 'Pokemon Team Builder',
+            image: Pokemon,
+            github: 'https://github.com/rkurian97/bc-project-2',
+            live: 'https://bc-project-2.herokuapp.com/',
+            description: "The Pokemon Team Builder application has been created for fans of Pokemon, and anyone interested in learning, playing and having fun in the Pokemon world. The user can build their own team, and select the Pokemons as they like. This application uses the pokeapi.co API to retrieve Pokemon data",
+            tags: ['#Javascript', '#Node.js', '#Express.js', '#MySQL/Sequelize', '#Handlebars.js', '#REST API']
+        }
+    ];
 
-                <h5>Lucid Game Review (Node/Express/React/MongoDb/JWT)</h5>
-                <a href="https://bc-project-2.herokuapp.com" target="_blank" rel="noopener noreferrer">
-                    <img src={Lucid} alt='Lucid Game Review App'/>
-                </a>
+    return (
+        <div className=' flex-grow bg-gray-900 pb-5 pt-5'>
 
-        </section>
-        
-    </div>
-  );
+            {
+                projects.map((project) =>
+                    <ProjectDiv title={project.title} description={project.description} image={project.image} tags={project.tags} github={project.github} live={project.live}/>
+                )
+            }
+
+
+        </div>
+    );
 };
 
 export default Project;
