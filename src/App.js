@@ -1,24 +1,16 @@
-import React, {useState} from 'react';
-import Navbar from './components/Navbar';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Project from './pages/project';
-import Footer from './components/Footer';
-import Sidebar from './components/Sidebar';
+import Footer from './components/Footer.js'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Navbar from './components/Navbar'
 function App() {
-  const [isOpen, setIsOpen]= useState(false)
-  const toggle = () => {
-      setIsOpen(!isOpen)
-  }
 
   return (
-    <div className="App">
+    <div className="App flex flex-col min-h-screen">
     <Router>
-      <Sidebar isOpen={isOpen} toggle={toggle}/>
-      <Navbar toggle={toggle}/>
+      <Navbar/>
       <Switch>
         <Route exact path="/"> <Redirect to="/about" /></Route>
         <Route path='/about' component={About} />

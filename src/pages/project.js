@@ -6,7 +6,7 @@ import Lucid from "../assets/lucid-game.png"
 
 const Project = () => {
   return (
-    <div className='projectComp'>
+    <div className='projectComp flex-grow bg-gray-900'>
         <section className='projectsContainer'>
             
                 <h5>Run Buddy (Html/CSS)</h5>

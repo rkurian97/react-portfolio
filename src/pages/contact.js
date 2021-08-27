@@ -38,7 +38,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='contact'>
+    <div className='contact flex-grow bg-gray-900'>
       <section>
         <Container>
         <h1 data-testid="h1tag">Contact <span class='theme'>me</span></h1>

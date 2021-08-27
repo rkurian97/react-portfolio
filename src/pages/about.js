@@ -6,50 +6,59 @@ import 'react-tabs/style/react-tabs.css';
 
 const About = () => {
   return (
-    <div className='about'>
-      <Container>
-        <Row>
-          <Col xs="12" md="6">
-            <img src={ProfilePic} id='profile-pic' alt='profile-pic'></img>
-          </Col>
-          <Col xs="12" md="6">
-            <h1> <span class='theme'>About</span> Me</h1>
+    <div className='lg:px-48 sm:px-10 about flex-grow bg-gray-900'>
+      <div className="flex mt-5">
+        <div className="grid lg:grid-cols-2">
+          {/* Profile Pic  */}
+          <div >
+            <img className="ml-auto mr-auto mb-2" src={ProfilePic} id='profile-pic' alt='profile-pic'></img>
+          </div>
+
+          {/* About Info  */}
+          <div className="px-4">
+            <h1> <span className='theme'>About</span> Me</h1>
             <p>
-             Hi, my name is Rohith Kurian, and welcome to my world. I finally knew that IT was the field for me after taking some <span class='theme'>database</span> classes that involved a lot of data modeling and realizing that I love data. Weird, I know. From how its stored, to how to retrieve it from users, to analyzing it and displaying it in nice <span class='theme'>visualizations</span>. I find all of it interesting. Although, I found my interest in a class that was meant to be an intro to database administration, I felt that field would not <span class='theme'>scratch</span> my programming itch, so here I am pursuing an occupation in full-stack development. Right about now, I am probably scouring through Google to solve a coding problem and chase that euphoria from seeing "Compiled <span class='theme'>Successfully</span>!" 
+             Hi, my name is Rohith Kurian, and welcome to my world. I finally knew that IT was the field for me after taking some <span className='theme'>database</span> classes that involved a lot of data modeling and realizing that I love data. 
+             Weird, I know. From how its stored, to how to retrieve it from users, to analyzing it and displaying it in nice <span className='theme'>visualizations</span>. I find all of it interesting. Although, I found my interest in a class that 
+             was meant to be an intro to database administration, I felt that field would not <span className='theme'>scratch</span> my programming itch, so here I am pursuing an occupation in full-stack development. Right about now, I am probably 
+             scouring through Google to solve a coding problem so I can finally see that "Compiled <span className='theme'>Successfully</span>!" 
             </p>
             <Tabs>
+              {/* Tabs */}
               <TabList >
                 <Tab>Skills</Tab>
+                <Tab>Learning</Tab>
                 <Tab>Education</Tab>
               </TabList>
 
+              {/* Skills */}
               <TabPanel>
                 <Container>
                   <Row>
                     <Col>
                       <ul>
-                        <li>Java </li>
-                        <li>HTML/CSS/JavaScript </li>
-                        <li><span class='theme'>SQL</span> </li>
-                        <li>Shell Script </li>
+                        <li>JavaScript ES6+ </li>
+                        <li>HTML5/CSS3 </li>
+                        <li class='theme'>Object Oriented programming</li>
+                        <li>jQuery </li>
                       </ul>
                     </Col>
                     <Col>
                       <ul>
-                          <li> <span class='theme'>Object Oriented programming</span></li>
-                          <li>Cloud infrastructure </li>
-                          <li>Oracle </li>
-                          <li>Microsoft Office </li>
+                          <li class='theme'> SQL MySQL/Oracle/MS SQL</li>
+                          <li>MongoDB/Mongoose </li>
+                          <li> Cloud infrastructure </li>
+                          <li>Object Relational Mapping (Sequelize) </li>
                         </ul>
                     </Col>
                   </Row>
                   <Row>
                     <Col>
                       <ul>
-                          <li>React.js </li>
+                          <li class='theme'>React.js </li>
                           <li>Express.js </li>
-                          <li>MongoDB/Mongoose </li>
-                          <li><span class='theme'>Rest APIs</span> </li>
+                          <li>Node.js </li>
+                          <li>Vue.js</li>
                         </ul>
                     </Col>
                     <Col>
@@ -64,25 +73,35 @@ const About = () => {
                   <Row>
                     <Col>
                       <ul>
-                          <li>Object Relational Mapping (Sequelize) </li>
+                          <li> Rest APIs </li>
                           <li>State Management </li>
                           <li>Authentication </li>
-                          <li><span class='theme'>PWAS</span> </li>
+                          <li><span class='theme'>GraphQL</span> </li>
                         </ul>
                     </Col>
                   </Row>
                 </Container>
               </TabPanel>
+              
+              {/* Learning */}
               <TabPanel>
                 <ul>
-                  <li>Bachelors in Computer Information Systems at <span class='theme'>University</span> of Houston </li>
-                  <li>The <span class='theme'>Coding</span> Bootcamp at UT Austin  </li>
+                  <li>Algorithims and Data Structures </li>
+                  <li className="theme"> AWS </li>
+                </ul>
+              </TabPanel>
+
+              {/* Education */}
+              <TabPanel>
+                <ul>
+                  <li>Bachelors in Computer Information Systems at <span className='theme'>University</span> of Houston </li>
+                  <li>The <span className='theme'>Coding</span> Bootcamp at UT Austin  </li>
                 </ul>
               </TabPanel>
             </Tabs>
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -22,31 +22,11 @@
   color: #15cdfc
 }
 
-.about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 140vh;
-  background: #101010;
-}
-
-@media screen and (max-width: 1000px) {
-  .about{
-    height: 180vh;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .about{
-    height: 220vh;
-  }
-}
 
 .contact {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
   background: #101010;
 
 }
@@ -55,7 +35,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150vh;
   background: #101010;
 
 }

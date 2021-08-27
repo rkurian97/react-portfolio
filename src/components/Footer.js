@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiFillGithub, AiFillLinkedin, AiFillFacebook} from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
 
 const Footer = () => {
     return (
@@ -16,9 +16,6 @@ const Footer = () => {
             </a>
             <a href='https://www.linkedin.com/in/rohith-kurian-22ab991a8/' target='_blank' rel="noopener noreferrer">
                 <AiFillLinkedin size={56} style={{ fill: '#15cdfc' }} />
-            </a>
-            <a href='https://www.facebook.com/rohit.kurian.5/' target='_blank' rel="noopener noreferrer">
-                <AiFillFacebook size={56}/>
             </a>
         </div>
     )
