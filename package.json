@@ -9,6 +9,8 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.36",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
@@ -16,6 +18,7 @@
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.2",
     "react-tabs": "^3.2.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.8",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -42,9 +45,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "postcss": "^7.0.36",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.8"
-  }
+  "devDependencies": {}
 }
