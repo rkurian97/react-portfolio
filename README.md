@@ -7,9 +7,10 @@ Rohith Kurian's React Web Portfolio.
 * Javascript
 * Node.js
 * React
+* Tailwind
 
 ## Live link
-https://rohith-react-portfolio.herokuapp.com/
+https://rkurian97.github.io/react-portfolio/
 
 ## Contribution
 Made by Rohith Kurian. 
