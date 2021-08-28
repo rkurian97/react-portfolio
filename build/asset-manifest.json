@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0e775702.chunk.css",
+    "main.js": "/static/js/main.4887e54d.chunk.js",
+    "main.js.map": "/static/js/main.4887e54d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4c314d92.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4c314d92.js.map",
+    "static/css/2.22fee755.chunk.css": "/static/css/2.22fee755.chunk.css",
+    "static/js/2.d5d1f886.chunk.js": "/static/js/2.d5d1f886.chunk.js",
+    "static/js/2.d5d1f886.chunk.js.map": "/static/js/2.d5d1f886.chunk.js.map",
+    "static/js/3.5df52057.chunk.js": "/static/js/3.5df52057.chunk.js",
+    "static/js/3.5df52057.chunk.js.map": "/static/js/3.5df52057.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.22fee755.chunk.css.map": "/static/css/2.22fee755.chunk.css.map",
+    "static/css/main.0e775702.chunk.css.map": "/static/css/main.0e775702.chunk.css.map",
+    "static/js/2.d5d1f886.chunk.js.LICENSE.txt": "/static/js/2.d5d1f886.chunk.js.LICENSE.txt",
+    "static/media/Portfolio_Pic.9df314da.jpg": "/static/media/Portfolio_Pic.9df314da.jpg",
+    "static/media/book-search.648455c9.png": "/static/media/book-search.648455c9.png",
+    "static/media/lucid-game.b34b4224.png": "/static/media/lucid-game.b34b4224.png",
+    "static/media/project1.64a5c89a.png": "/static/media/project1.64a5c89a.png",
+    "static/media/shop-shop.55697f5a.png": "/static/media/shop-shop.55697f5a.png",
+    "static/media/team-page.9fbd71b2.jpg": "/static/media/team-page.9fbd71b2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c314d92.js",
+    "static/css/2.22fee755.chunk.css",
+    "static/js/2.d5d1f886.chunk.js",
+    "static/css/main.0e775702.chunk.css",
+    "static/js/main.4887e54d.chunk.js"
+  ]
+}
