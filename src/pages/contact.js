@@ -1,73 +1,41 @@
-import React, { useState } from 'react';
-
-import { validateEmail } from '../utils/helpers';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import React from 'react';
 
 const Contact = () => {
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-
-  const [errorMessage, setErrorMessage] = useState('');
-  const { name, email, message } = formState;
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!errorMessage) {
-      console.log('Submit Form', formState);
-    }
-  };
-
-  const handleChange = (e) => {
-    if (e.target.name === 'email') {
-      const isValid = validateEmail(e.target.value);
-      if (!isValid) {
-        setErrorMessage('Your email is invalid.');
-      } else {
-        setErrorMessage('');
-      }
-    } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
-      } else {
-        setErrorMessage('');
-      }
-    }
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log('Handle Form', formState);
-    }
-  };
 
   return (
-    <div className='contact flex-grow bg-gray-900'>
-      <section>
-        <Container>
-        <h1 data-testid="h1tag">Contact <span class='theme'>me</span></h1>
-        <form id="contact-form" onSubmit={handleSubmit}>
-          <Row>
-            <Col> <label htmlFor="name">Name:</label> </Col>
-            <Col> <input class='form-input' type="text" name="name" defaultValue={name} onBlur={handleChange}/> </Col>
-          </Row>
-          <Row>
-            <Col> <label htmlFor="email"> <span class='theme'>Email address:</span></label> </Col>
-            <Col><input class='form-input' type="email" name="email" defaultValue={email} onBlur={handleChange} /> </Col>
-          </Row>
-          <Row>
-            <Col> <label htmlFor="message">Message:</label> </Col>
-            <Col> <textarea class='form-input' name="message" rows="5" defaultValue={message} onBlur={handleChange} /> </Col>
-          </Row>
-          {errorMessage && (
-            <div>
-              <p className="error-text">{errorMessage}</p>
-            </div>
-          )}
-          <Row>
-            <Button variant='info' style={{ background: '#15cdfc' }} data-testid="button" type="submit">Submit</Button>
-          </Row>
-        </form>
-        </Container>
-      </section>
-
-      
+    <div className="flex items-center min-h-screen bg-gray-800 dark:bg-gray-900">
+      <div className="container mx-auto">
+        <div className="max-w-md mx-auto my-10 bg-gray-900 p-5 rounded-md shadow-sm">
+          <div className="text-center">
+            <h1 className="my-3 text-3xl font-semibold text-bright-turquoise ">Contact Me</h1>
+            <p className="text-gray-400">Fill up the form below to send us a message.</p>
+          </div>
+          <div className="m-7">
+            <form action="https://api.web3forms.com/submit" method="POST" >
+              <input type="hidden" name="apikey" defaultValue="dd47429e-ea48-4ac7-ac27-7ea358cb11c7" />
+              <input type="hidden" name="subject" defaultValue="New Submission from Web3Forms" />
+              <input type="checkbox" name="botcheck" id style={{ display: 'none' }} />
+              <div className="mb-6">
+                <label htmlFor="name" className="block mb-2 text-sm text-gray-400">Full Name</label>
+                <input type="text" name="name" placeholder="John Doe" required className="w-full text-gray-900 px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+              </div>
+              <div className="mb-6">
+                <label htmlFor="email" className="block mb-2 text-sm text-gray-400">Email Address</label>
+                <input type="email" name="email"  placeholder="you@company.com" required className="w-full text-gray-900 px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+              </div>
+              <div className="mb-6">
+                <label htmlFor="message" className="block mb-2 text-sm text-gray-400">Your Message</label>
+                <textarea rows={5} name="message"  placeholder="Your Message" className="w-full text-gray-900 px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required defaultValue={""} />
+              </div>
+              <div className="mb-6">
+                <button type="submit" className="w-full px-3 py-4 text-white bg-bright-turquoise rounded-md focus:bg-indigo-600 focus:outline-none">Send Message</button>
+              </div>
+              <p className="text-base text-center text-gray-400" id="result">
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

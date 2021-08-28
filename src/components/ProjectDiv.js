@@ -1,30 +1,35 @@
 import React from 'react'
+import { AiFillGithub} from 'react-icons/ai';
 
 const ProjectDiv = (props) => {
     console.log(props.live)
     return (
-        <div className="flex ml-auto mr-auto w-9/12 mb-5">
-            <div className="flex flex-col lg:flex-row w-full items-start lg:items-center rounded shadow" >
-                <div className="w-full lg:w-2/3 min-h-64 overflow-hidden dark:bg-gray-800 rounded-l-lg" style={{ backgroundImage: `url(${props.image})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }} />
-                <div className="w-full lg:w-1/3 overflow-hidden min-h-24 dark:border-gray-700 lg:min-h-64 border-t lg:border-t-0 lg:rounded-r dark:bg-gray-700 bg-gray-800" >
-                    <h4 className="text-center mt-2">{props.title}</h4>
-                    <p className="px-2"> {props.description}</p>
-                    
-                    <a href={props.live} target="_blank" rel="noopener noreferrer">
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full">
-                            live
+        <div className="max-w-2xl mx-auto overflow-hidden bg-gray-900 rounded-lg shadow-md mt-4">
+            <img className="object-cover w-full h-64" src={props.image} alt="Article" />
+            <div className="p-6">
+                <div>
+                    <p className="block mt-2 text-2xl font-semibold text-bright-turquoise hover:text-bright-turquoise-800 hover:underline">{props.title}</p>
+                    <p className="mt-2 text-sm text-gray-200">{props.description}</p>
+                </div>
+
+                <p className='text-center'> Tech Stack</p>
+                {
+                    props.tags.map((tag) =>
+                        <div class="text-xs inline-flex items-center font-bold leading-sm  px-3 py-1 bg-bright-turquoise-200 text-bright-turquoise-700 rounded-full ml-2 mb-2">
+                            {tag}
+                        </div>
+                    )
+                }
+
+                <div className="mt-4">
+                    <div className="flex items-center">
+                        <button className="bg-bright-turquoise-600 px-2 py-1 ml-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md dark:bg-gray-800 hover:bg-blue-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-blue-500 dark:focus:bg-gray-700">
+                            Live
                         </button>
-                    </a>
-
-                    <h6 className="text-center mt-2">Tech Stack</h6>
-
-                    {
-                        props.tags.map((tag) =>
-                            <div class="text-xs inline-flex items-center font-bold leading-sm  px-3 py-1 bg-blue-200 text-blue-700 rounded-full ml-2 mb-2">
-                                {tag}
-                            </div>
-                        )
-                    }
+                        <button className="bg-bright-turquoise-600 px-2 py-1 ml-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md dark:bg-gray-800 hover:bg-blue-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-blue-500 dark:focus:bg-gray-700">
+                            <AiFillGithub size={24}/>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
