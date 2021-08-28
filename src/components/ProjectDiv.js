@@ -4,7 +4,7 @@ import { AiFillGithub} from 'react-icons/ai';
 const ProjectDiv = (props) => {
     console.log(props.live)
     return (
-        <div className="max-w-2xl mx-auto overflow-hidden bg-gray-900 rounded-lg shadow-md mt-4">
+        <div className="max-w-2xl mx-auto overflow-hidden bg-gray-900 rounded-lg shadow-md mb-10">
             <img className="object-cover w-full h-64" src={props.image} alt="Article" />
             <div className="p-6">
                 <div>

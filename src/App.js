@@ -3,7 +3,6 @@ import Contact from './pages/contact';
 import Project from './pages/project';
 import Footer from './components/Footer.js'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar'
 function App() {
 
