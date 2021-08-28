@@ -39,13 +39,13 @@ const About = () => {
                       <ul>
                         <li>JavaScript ES6+ </li>
                         <li>HTML5/CSS3 </li>
-                        <li class='theme'>Object Oriented programming</li>
+                        <li className='text-bright-turquoise'>Object Oriented programming</li>
                         <li>jQuery </li>
                       </ul>
                     </Col>
                     <Col>
                       <ul>
-                          <li class='theme'> SQL MySQL/Oracle/MS SQL</li>
+                          <li className='text-bright-turquoise'> SQL MySQL/Oracle/MS SQL</li>
                           <li>MongoDB/Mongoose </li>
                           <li> Cloud infrastructure </li>
                           <li>Object Relational Mapping (Sequelize) </li>
@@ -55,7 +55,7 @@ const About = () => {
                   <Row>
                     <Col>
                       <ul>
-                          <li class='theme'>React.js </li>
+                          <li className='text-bright-turquoise'>React.js </li>
                           <li>Express.js </li>
                           <li>Node.js </li>
                           <li>Vue.js</li>
@@ -64,7 +64,7 @@ const About = () => {
                     <Col>
                       <ul>
                           <li>Git </li>
-                          <li><span class='theme'>Heroku</span> </li>
+                          <li><span className='text-bright-turquoise'>Heroku</span> </li>
                           <li>Agile methodology </li>
                           <li>Data Visualization </li>
                         </ul>
@@ -76,7 +76,7 @@ const About = () => {
                           <li> Rest APIs </li>
                           <li>State Management </li>
                           <li>Authentication </li>
-                          <li><span class='theme'>GraphQL</span> </li>
+                          <li><span className='text-bright-turquoise'>GraphQL</span> </li>
                         </ul>
                     </Col>
                   </Row>

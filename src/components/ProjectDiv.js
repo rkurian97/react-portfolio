@@ -8,7 +8,7 @@ const ProjectDiv = (props) => {
             <img className="object-cover w-full h-64" src={props.image} alt="Article" />
             <div className="p-6">
                 <div>
-                    <p className="block mt-2 text-2xl font-semibold text-bright-turquoise hover:text-bright-turquoise-800 hover:underline">{props.title}</p>
+                    <p className="block mt-2 text-2xl font-semibold text-bright-turquoise">{props.title}</p>
                     <p className="mt-2 text-sm text-gray-200">{props.description}</p>
                 </div>
 
@@ -23,12 +23,17 @@ const ProjectDiv = (props) => {
 
                 <div className="mt-4">
                     <div className="flex items-center">
-                        <button className="bg-bright-turquoise-600 px-2 py-1 ml-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md dark:bg-gray-800 hover:bg-blue-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-blue-500 dark:focus:bg-gray-700">
-                            Live
-                        </button>
-                        <button className="bg-bright-turquoise-600 px-2 py-1 ml-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md dark:bg-gray-800 hover:bg-blue-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-blue-500 dark:focus:bg-gray-700">
-                            <AiFillGithub size={24}/>
-                        </button>
+                        <a href={props.live} target="_blank" rel="noopener noreferrer">
+                            <button className="bg-bright-turquoise-600 px-2 py-1 ml-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md dark:bg-gray-800 hover:bg-blue-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-blue-500 dark:focus:bg-gray-700">
+                                Live
+                            </button>
+                        </a>
+
+                        <a href={props.github} target="_blank" rel="noopener noreferrer">
+                            <button className="bg-bright-turquoise-600 px-2 py-1 ml-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md dark:bg-gray-800 hover:bg-blue-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-blue-500 dark:focus:bg-gray-700">
+                                <AiFillGithub size={24}/>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
