@@ -17,10 +17,10 @@ const About = () => {
           <div className="px-4">
             <h1 className='text-5xl'> <span className='text-bright-turquoise'>About</span> Me</h1>
             <p>
-             Hi, my name is Rohith Kurian, and welcome to my world. I finally knew that IT was the field for me after taking some <span className='text-bright-turquoise'>database</span> classes that involved a lot of data modeling and realizing that I love data. 
-             Weird, I know. From how its stored, to how to retrieve it from users, to analyzing it and displaying it in nice <span className='text-bright-turquoise'>visualizations</span>. I find all of it interesting. Although, I found my interest in a class that 
-             was meant to be an intro to database administration, I felt that field would not <span className='text-bright-turquoise'>scratch</span> my programming itch, so here I am pursuing an occupation in full-stack development. Right about now, I am probably 
-             scouring through Google to solve a coding problem so I can finally see that "Compiled <span className='text-bright-turquoise'>Successfully</span>!" 
+              Hi, my name is Rohith Kurian, and welcome to my world. I finally knew that IT was the field for me after taking some <span className='text-bright-turquoise'>database</span> classes that involved a lot of data modeling and realizing that I love data.
+              Weird, I know. From how its stored, to how to retrieve it from users, to analyzing it and displaying it in nice <span className='text-bright-turquoise'>visualizations</span>. I find all of it interesting. Although, I found my interest in a class that
+              was meant to be an intro to database administration, I felt that field would not <span className='text-bright-turquoise'>scratch</span> my programming itch, so here I am pursuing an occupation in full-stack development. Right about now, I am probably
+              scouring through Google to solve a coding problem so I can finally see that "Compiled <span className='text-bright-turquoise'>Successfully</span>!"
             </p>
             <Tabs>
               {/* Tabs */}
@@ -44,44 +44,44 @@ const About = () => {
                     </div>
                     <div>
                       <ul>
-                          <li className='text-bright-turquoise'> SQL MySQL/Oracle/MS SQL</li>
-                          <li>MongoDB/Mongoose </li>
-                          <li> Cloud infrastructure </li>
-                          <li>Object Relational Mapping (Sequelize) </li>
-                        </ul>
+                        <li className='text-bright-turquoise'> SQL MySQL/Oracle/MS SQL</li>
+                        <li>MongoDB/Mongoose </li>
+                        <li> Cloud infrastructure </li>
+                        <li>Object Relational Mapping (Sequelize) </li>
+                      </ul>
                     </div>
                   </div>
                   <div className='grid grid-cols-2 gap-2 mb-5'>
                     <div>
                       <ul>
-                          <li className='text-bright-turquoise'>React.js </li>
-                          <li>Express.js </li>
-                          <li>Node.js </li>
-                          <li>Vue.js</li>
-                        </ul>
+                        <li className='text-bright-turquoise'>React.js </li>
+                        <li>Express.js </li>
+                        <li>Node.js </li>
+                        <li>Vue.js</li>
+                      </ul>
                     </div>
                     <div>
                       <ul>
-                          <li>Git </li>
-                          <li><span className='text-bright-turquoise'>Heroku</span> </li>
-                          <li>Agile methodology </li>
-                          <li>Data Visualization </li>
-                        </ul>
+                        <li>Git </li>
+                        <li><span className='text-bright-turquoise'>Heroku</span> </li>
+                        <li>Agile methodology </li>
+                        <li>Data Visualization </li>
+                      </ul>
                     </div>
                   </div>
                   <div className='grid grid-cols-1 gap-2'>
                     <div>
                       <ul>
-                          <li> Rest APIs </li>
-                          <li>State Management </li>
-                          <li>Authentication </li>
-                          <li><span className='text-bright-turquoise'>GraphQL</span> </li>
-                        </ul>
+                        <li> Rest APIs </li>
+                        <li>State Management </li>
+                        <li>Authentication </li>
+                        <li><span className='text-bright-turquoise'>GraphQL</span> </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </TabPanel>
-              
+
               {/* Learning */}
               <TabPanel>
                 <ul>
@@ -98,7 +98,15 @@ const About = () => {
                 </ul>
               </TabPanel>
             </Tabs>
+
+            <a href='..\assets\Rohith Resume.pdf' download>
+              <button className="mt-5 mb-5 bg-bright-turquoise-600 px-2 py-1 ml-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md dark:bg-gray-800 hover:bg-blue-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-blue-500 dark:focus:bg-gray-700">
+                Download Resume
+              </button>
+            </a>
           </div>
+
+
         </div>
       </div>
     </div>

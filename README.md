@@ -12,5 +12,8 @@ Rohith Kurian's React Web Portfolio.
 ## Live link
 https://rkurian97.github.io/react-portfolio/
 
+##
+![Image](./src/assets/readmeIMG.png)
+
 ## Contribution
 Made by Rohith Kurian. 

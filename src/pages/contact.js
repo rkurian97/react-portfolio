@@ -32,7 +32,10 @@ const Contact = () => {
               </div>
               <p className="text-base text-center text-gray-400" id="result">
               </p>
+
+              <p>Or just send me an email at <a className='hover:text-bright-turquoise' href= "mailto: kurian.rohit1229@gmail.com">kurian.rohit1229@gmail.com</a></p>
             </form>
+
           </div>
         </div>
       </div>
