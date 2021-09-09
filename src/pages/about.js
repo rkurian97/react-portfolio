@@ -2,6 +2,7 @@ import React from 'react';
 import ProfilePic from '../assets/Portfolio_Pic.jpg'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import Resume from '../assets/Rohith Resume.pdf'
 
 const About = () => {
   return (
@@ -99,7 +100,7 @@ const About = () => {
               </TabPanel>
             </Tabs>
 
-            <a href='..\assets\Rohith Resume.pdf' download>
+            <a href={Resume} download>
               <button className="mt-5 mb-5 bg-bright-turquoise-600 px-2 py-1 ml-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md dark:bg-gray-800 hover:bg-blue-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-blue-500 dark:focus:bg-gray-700">
                 Download Resume
               </button>
